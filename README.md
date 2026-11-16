@@ -17,17 +17,4 @@ Die Landingpage unterstützt Deutsch, Englisch, Französisch und Spanisch. Über
 
 Die signierten APKs werden als GitHub-Release veröffentlicht. Version, Dateigröße und Release-URLs in `index.html` gemeinsam aktualisieren. Das Release enthält jeweils die Android-TV-APK, die Fire-TV-Kompatibilitäts-APK und `SHA256SUMS.txt`. Private Signaturschlüssel gehören niemals in dieses Repository.
 
-## Spätere Unterstützung
-
-PayPal und Buy Me a Coffee sind vorbereitet, aber noch deaktiviert. In `support.json` können später die vom Eigentümer bestätigten öffentlichen Empfängerlinks hinterlegt werden:
-
-```json
-{
-  "paypal": "",
-  "buyMeACoffee": ""
-}
-```
-
-Leere Werte lassen die jeweilige Option deaktiviert. `app.js` akzeptiert ausschließlich HTTPS-Links auf den vorgesehenen Anbieter-Domains und erstellt normale Links. Auf der Landingpage werden keine externen Zahlungsskripte geladen. Keine geheimen Schlüssel oder privaten Zugangsdaten eintragen. Vor der Aktivierung den öffentlichen Hinweistext und die Datenschutzerklärung an die tatsächliche Zahlungsabwicklung anpassen. Beträge wählt der Unterstützer beim Zahlungsanbieter; die Website verarbeitet selbst keine Zahlung.
-
 Kontakt: unbox.digital.printing@gmail.com
