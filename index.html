@@ -3,140 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="VPN Indicator for TV – Dein VPN-Status auf Android TV, Google TV und unterstützten Fire-TV-Geräten.">
-  <title>VPN Indicator for TV</title>
-  <style>
-    :root {
-      --cyan: #06b6d4;
-      --blue: #0284c7;
-      --blue-dark: #0369a1;
-      --dark: #121212;
-      --card: #ffffff;
-      --text: #1f2933;
-      --muted: #61707c;
-      --line: #dce5ea;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Arial, sans-serif;
-      color: var(--text);
-      background: #f5f8fa;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0284c7, #06b6d4);
-      color: white;
-      padding: 72px 24px 64px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: clamp(2.25rem, 7vw, 3.6rem);
-      letter-spacing: -0.04em;
-    }
-
-    header p {
-      max-width: 620px;
-      margin: 16px auto 0;
-      font-size: 1.15rem;
-      opacity: 0.95;
-    }
-
-    main {
-      max-width: 860px;
-      margin: -28px auto 0;
-      padding: 0 20px 48px;
-    }
-
-    section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 28px;
-      margin-top: 20px;
-      box-shadow: 0 8px 24px rgba(30, 60, 80, 0.06);
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      color: var(--blue-dark);
-      font-size: 1.35rem;
-    }
-
-    p {
-      margin: 0 0 14px;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    ul {
-      margin: 12px 0 0;
-      padding-left: 22px;
-    }
-
-    li {
-      margin-bottom: 6px;
-    }
-
-    a {
-      color: var(--blue-dark);
-      font-weight: 650;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 3px;
-    }
-
-    footer {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 20px 40px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 0.9rem;
-    }
-  </style>
+  <title>VPN Indicator for TV – Your VPN. In sight.</title>
+  <meta name="description" content="Dein VPN-Status. Direkt im Bild. Entdecke VPN Indicator for TV für Fire TV, Android TV und Google TV. Mit anpassbarem Indikator und Abbruchhinweis. Kostenloser APK-Download.">
+  <meta name="theme-color" content="#080f19">
+  <meta property="og:title" content="VPN Indicator for TV – Your VPN. In sight.">
+  <meta property="og:description" content="Dein Film läuft. Dein VPN auch? Behalte deinen VPN-Status direkt auf dem TV im Blick.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unbox-digital-printing.github.io/vpn-indicator-for-tv/">
+  <meta property="og:image" content="https://unbox-digital-printing.github.io/vpn-indicator-for-tv/assets/app-logo.png">
+  <link rel="canonical" href="https://unbox-digital-printing.github.io/vpn-indicator-for-tv/">
+  <link rel="icon" href="assets/app-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="translations.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>VPN Indicator for TV</h1>
-    <p>Your VPN. In sight.</p>
-  </header>
-  <main>
-    <section>
-      <h2>Über die App</h2>
-      <p>VPN Indicator for TV zeigt den vom Betriebssystem gemeldeten VPN-Status direkt auf dem Bildschirm an. So kannst du beim Fernsehen erkennen, ob dein Gerät mit einem VPN verbunden ist und wann eine Verbindung abbricht.</p>
-      <ul>
-        <li><strong>Dezenter Indikator:</strong> Schlüssel, VPN-Symbol oder Punkt mit wählbarer Farbe, Größe und Sichtbarkeit.</li>
-        <li><strong>Flexible Position:</strong> Vier Ecken, vier mittige Randpositionen oder automatischer Wechsel durch die Ecken.</li>
-        <li><strong>Abbruchhinweis:</strong> Optionales rotes Symbol mit einstellbarer Anzeigedauer und Hinweiston.</li>
-        <li><strong>Eigene Anbieter:</strong> Namen manuell speichern, erneut auswählen und einzeln löschen.</li>
-        <li><strong>Lokale Verarbeitung:</strong> Einstellungen und Anbieter bleiben auf dem Gerät. Die App verwendet keine Tracking- oder Werbe-SDKs.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Unterstützte Geräte</h2>
-      <p>Die App ist für Android TV und Google TV sowie für unterstützte Fire-TV-Geräte mit Android-basiertem Fire OS vorgesehen. Für Fire TV gibt es eine eigene Sideload-Kompatibilitätsversion. Die Anzeige über anderen Apps hängt von der jeweiligen Firmware ab.</p>
-      <p>Der VPN-Status wird auf dem Gerät erkannt, auf dem die App läuft. Die Anzeige eines aktiven VPN-Netzwerks belegt nicht, dass jede App ihren Verkehr durch diesen Tunnel leitet.</p>
-    </section>
-    <section>
-      <h2>Datenschutz</h2>
-      <p>Informationen zur Verarbeitung personenbezogener Daten findest du in unserer <a href="privacy.html">Datenschutzerklärung</a>.</p>
-    </section>
-    <section>
-      <h2>Kontakt</h2>
-      <p>Bei Fragen, Feedback oder Problemen erreichst du den Entwickler unter <a href="mailto:unbox.digital.printing@gmail.com">unbox.digital.printing@gmail.com</a>.</p>
-      <p><a href="https://unbox-digital-printing.github.io/apps/">Zur Übersicht aller Apps</a></p>
-    </section>
-  </main>
-  <footer>© 2026 VPN Indicator for TV · Entwickelt von Un!Box - Digital &amp; Print</footer>
-</body>
-</html>
+<svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="9" r="5"/><path d="m12 13 8 8m-3-3 3-3m-6 0 3-3"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6z"/><path d="m8 11 3 3 5-5"/></symbol>
+  <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4 8h13v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zm13 1h2a3 3 0 0 1 0 6h-2M7 2v2m5-2v2m5-2v2M2 23h18"/></symbol>
+</defs></svg>
+<a class="skip-link" href="#main">Zum Inhalt</a>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Hauptnavigation">
+    <a class="brand" href="#" aria-label="VPN Indicator for TV – Startseite"><img src="assets/app-logo.png" width="40" height="40" alt=""><span>VPN Indicator <span class="brand-light">for TV</span></span></a>
+    <div class="nav-links"><a href="#funktionen">Funktionen</a><a href="#vorschau">Vorschau</a><a href="#installation">Installation</a><a href="#faq">FAQ</a></div>
+    <div class="nav-actions"><a class="button button-small button-outline" href="#download">Download <svg class="icon"><use href="#i-download"/></svg></a><details class="language-menu" data-no-i18n><summary aria-label="Sprache wählen / Choose language"><img id="language-flag" src="assets/flags/de.svg" width="18" height="13" alt=""><span id="language-code">DE</span><span class="language-chevron">⌄</span></summary><div class="language-options"><button type="button" data-language="de" aria-label="Deutsch" lang="de" aria-pressed="true"><img src="assets/flags/de.svg" width="20" height="14" alt="">Deutsch <span>DE</span></button><button type="button" data-language="en" aria-label="English" lang="en" aria-pressed="false"><img src="assets/flags/en.svg" width="20" height="14" alt="">English <span>EN</span></button><button type="button" data-language="fr" aria-label="Français" lang="fr" aria-pressed="false"><img src="assets/flags/fr.svg" width="20" height="14" alt="">Français <span>FR</span></button><button type="button" data-language="es" aria-label="Español" lang="es" aria-pressed="false"><img src="assets/flags/es.svg" width="20" height="14" alt="">Español <span>ES</span></button></div></details></div>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="live-dot"></span> KLEINES SYMBOL. KLARER STATUS.</p>
+      <h1 id="hero-title">Dein Film läuft.<br>Dein VPN <em>auch?</em></h1>
+      <p class="hero-lead">Dein VPN-Status, direkt auf dem TV. Ein dezenter Indikator bleibt im Bild – damit du einen Verbindungsabbruch bemerkst.</p>
+      <div class="hero-actions"><a class="button button-primary" href="#download">App herunterladen <svg class="icon"><use href="#i-download"/></svg></a><a class="text-link" href="#vorschau">Im Bild erleben <span>↗</span></a></div>
+      <p class="hero-note">Kostenlos. Ohne Konto. Ohne Werbung.</p>
+      <div class="platforms" aria-label="Unterstützte Plattformen"><span>fire<span class="fire-smile">tv</span></span><i></i><span>android<span class="platform-light">tv</span></span><i></i><span class="google-tv">Google TV</span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-note"><span class="live-dot"></span> Dein VPN. Immer im Blick.</div>
+      <div class="television hero-tv">
+        <div class="screen">
+          <img class="landscape" src="assets/landscape.svg" width="1600" height="900" alt="Illustrierte Berglandschaft im Abendlicht">
+          <div class="screen-top"><span class="film-label">NATURE COLLECTION</span><span class="hero-indicator" aria-label="Beispiel eines aktiven VPN-Indikators">VPN</span></div>
+          <div class="film-title"><span>A MOMENT OF</span><strong>STILLNESS</strong><span class="film-subtitle">Weniger Ablenkung. Mehr Moment.</span></div>
+          <div class="film-progress"><span>04:28</span><div><i></i></div><span>52:16</span></div>
+        </div>
+        <div class="tv-chin"><span></span></div>
+      </div>
+      <div class="tv-foot"></div>
+      <div class="visual-caption"><span class="caption-line"></span><p>Dein Programm bleibt die Hauptsache.<br><strong>Der Status bleibt sichtbar.</strong></p></div>
+      <p class="demo-disclaimer">Illustration · kein tatsächlicher Verbindungsstatus</p>
+    </div>
+  </section>
+
+  <div class="trust-strip"><div class="wrap"><span><svg class="icon"><use href="#i-check"/></svg> Direkt auf deinem Gerät</span><span><svg class="icon"><use href="#i-check"/></svg> Keine Tracking-SDKs</span><span><svg class="icon"><use href="#i-check"/></svg> Mit der Fernbedienung bedienbar</span></div></div>
+
+  <section id="funktionen" class="section wrap features" aria-labelledby="features-title">
+    <div class="section-heading"><p class="eyebrow">WENIGER NACHSEHEN. MEHR FERNSEHEN.</p><h2 id="features-title">Ein kleines Zeichen.<br>Ein gutes Gefühl.</h2><p>Die VPN-App verbindet. VPN Indicator for TV zeigt dir den Status. Einfach dort, wo du gerade hinschaust.</p></div>
+    <div class="feature-grid">
+      <article class="feature"><div class="feature-art"><span class="mini-vpn">VPN</span><span class="mini-dot"></span><svg class="feature-key"><use href="#i-key"/></svg></div><span class="feature-number">01 / DEIN LOOK</span><h3>Passt in dein Bild.</h3><p>Schlüssel, VPN-Schriftzug oder Punkt. Wähle Farbe, Größe, Transparenz und Position – dezent wie ein Senderlogo.</p></article>
+      <article class="feature"><div class="feature-art"><span class="signal-demo"><i></i><i></i><i></i></span><span class="mini-vpn mini-red">VPN</span></div><span class="feature-number">02 / DEIN HINWEIS</span><h3>Wenn sich etwas ändert.</h3><p>Bei einem Abbruch wird das Symbol auf Wunsch rot. Dazu ein kurzer Ton? Du bestimmst, wie lange der Hinweis bleibt.</p></article>
+      <article class="feature"><div class="feature-art"><svg class="feature-shield"><use href="#i-shield"/></svg><span class="local-label">ON DEVICE</span></div><span class="feature-number">03 / DEINE EINSTELLUNGEN</span><h3>Bleibt bei dir.</h3><p>Deine Einstellungen und gespeicherten Anbieternamen bleiben auf dem Gerät. Optional startet die Überwachung mit dem System.</p></article>
+    </div>
+  </section>
+
+  <section id="vorschau" class="preview-section section" aria-labelledby="preview-title"><div class="wrap">
+    <div class="preview-heading"><div><p class="eyebrow">MACH ES ZU DEINEM.</p><h2 id="preview-title">So dezent,<br>wie du willst.</h2></div><p>Probier den Look direkt aus.<br>Das ist eine interaktive Web-Vorschau.<br>Dein echtes VPN wird hier nicht ausgelesen.</p></div>
+    <div class="playground">
+      <div class="preview-stage">
+        <div class="television demo-tv"><div class="screen" id="demo-screen">
+          <img class="landscape" src="assets/landscape.svg" width="1600" height="900" alt="TV-Vorschau mit anpassbarem Indikator">
+          <div class="preview-film"><span>ZURÜCKLEHNEN.</span><strong>Der Moment<br>gehört dir.</strong></div>
+          <div id="demo-indicator" class="demo-indicator" data-position="top-right" data-symbol="vpn"><span class="indicator-vpn">VPN</span><svg class="indicator-key"><use href="#i-key"/></svg><span class="indicator-dot"></span></div>
+          <span class="preview-watermark">VORSCHAU</span>
+        </div><div class="tv-chin"><span></span></div></div>
+        <div class="preview-state"><span id="preview-dot" class="live-dot"></span><span id="preview-status" role="status" aria-live="polite">Demo: VPN verbunden</span><button id="disconnect-test" class="test-button" type="button">Abbruch simulieren <span>↗</span></button></div>
+      </div>
+      <div class="customizer">
+        <p class="panel-label">DEIN INDIKATOR</p>
+        <fieldset><legend>Symbol</legend><div class="segmented" id="symbol-options"><button type="button" data-symbol="key" aria-pressed="false"><svg class="icon"><use href="#i-key"/></svg><span>Schlüssel</span></button><button type="button" data-symbol="vpn" aria-pressed="true"><span class="symbol-vpn">VPN</span></button><button type="button" data-symbol="dot" aria-pressed="false"><span class="symbol-dot"></span><span>Punkt</span></button></div></fieldset>
+        <fieldset><legend>Farbe</legend><div class="color-options" id="color-options"><button type="button" style="--swatch:#69e3ad" data-color="#69e3ad" aria-label="Grün" aria-pressed="true"></button><button type="button" style="--swatch:#ffffff" data-color="#ffffff" aria-label="Weiß" aria-pressed="false"></button><button type="button" style="--swatch:#151b23" data-color="#151b23" aria-label="Schwarz" aria-pressed="false"></button><button type="button" style="--swatch:#67a7ff" data-color="#67a7ff" aria-label="Blau" aria-pressed="false"></button><button type="button" style="--swatch:#f2d56c" data-color="#f2d56c" aria-label="Gelb" aria-pressed="false"></button></div></fieldset>
+        <div class="position-and-opacity"><fieldset><legend>Position</legend><div class="position-grid" id="position-options"><button type="button" data-position="top-left" aria-label="Oben links" aria-pressed="false">↖</button><button type="button" data-position="top-center" aria-label="Oben Mitte" aria-pressed="false">↑</button><button type="button" data-position="top-right" aria-label="Oben rechts" aria-pressed="true">↗</button><button type="button" data-position="center-left" aria-label="Links Mitte" aria-pressed="false">←</button><span aria-hidden="true"></span><button type="button" data-position="center-right" aria-label="Rechts Mitte" aria-pressed="false">→</button><button type="button" data-position="bottom-left" aria-label="Unten links" aria-pressed="false">↙</button><button type="button" data-position="bottom-center" aria-label="Unten Mitte" aria-pressed="false">↓</button><button type="button" data-position="bottom-right" aria-label="Unten rechts" aria-pressed="false">↘</button></div></fieldset><div class="opacity-control"><label for="opacity">Sichtbarkeit <output id="opacity-value" for="opacity">75 %</output></label><input type="range" id="opacity" min="20" max="100" value="75" step="5"><p>Dezent im Hintergrund.<br>Genau nach deinem Geschmack.</p></div></div>
+        <p class="customizer-note">In der App außerdem: drei Größen, wechselnde Farben, rotierende Ecken und individuelle Anzeigedauern.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="download" class="section wrap download-section" aria-labelledby="download-title">
+    <div class="section-heading centered"><p class="eyebrow">BEREIT FÜR DEINEN TV.</p><h2 id="download-title">Dein nächster Film.<br>Mit VPN im Blick.</h2><p>Wähle die passende Version für dein Gerät.<br>Direkt herunterladen und per Sideload installieren.</p></div>
+    <div class="download-grid">
+      <article class="download-card fire-card"><div class="download-card-top"><span class="device-logo">fire<span>tv</span></span><span class="release-label">VERSION 0.4</span></div><h3>Für deinen Fire TV.</h3><p>Die eigene Kompatibilitätsversion für Geräte mit Android-basiertem Fire OS.</p><ul class="check-list"><li>Für die Bedienung am TV gemacht</li><li>Mit angepasstem Berechtigungsmodell</li><li>Auf Fire TV erfolgreich getestet</li></ul><a class="button button-primary download-link" data-platform="firetv" href="https://github.com/unbox-digital-printing/vpn-indicator-for-tv/releases/download/v0.4/VPN-Indicator-for-TV-FireTV.apk">Fire-TV-APK herunterladen <svg class="icon"><use href="#i-download"/></svg></a><div class="download-meta"><span>APK · <span data-size="firetv">ca. 1,1 MB</span></span><a href="#installation" data-show-install="firetv">So installierst du die App ↗</a></div><p class="device-note">Android-basiertes Fire OS ab API 23. Nicht für Vega OS.</p></article>
+      <article class="download-card"><div class="download-card-top"><span class="device-logo android-logo">android<span>tv</span></span><span class="release-label">VERSION 0.4</span></div><h3>Für Android & Google TV.</h3><p>Die reguläre Version für Android-TV- und Google-TV-Geräte ab Android 6.</p><ul class="check-list"><li>Alle Indikator- und Hinweisfunktionen</li><li>Für Android API 35 gebaut</li><li>Anzeige über anderen Apps freigeben</li></ul><a class="button button-light download-link" data-platform="android" href="https://github.com/unbox-digital-printing/vpn-indicator-for-tv/releases/download/v0.4/VPN-Indicator-for-TV.apk">Android-TV-APK herunterladen <svg class="icon"><use href="#i-download"/></svg></a><div class="download-meta"><span>APK · <span data-size="android">ca. 1,1 MB</span></span><a href="#installation" data-show-install="android">So installierst du die App ↗</a></div><p class="device-note">Android 6 / API 23 oder neuer. Google TV eingeschlossen.</p></article>
+    </div>
+    <div class="download-fineprint"><svg class="icon"><use href="#i-shield"/></svg><p>Originaldateien aus dem offiziellen Projekt-Repository. Die Kompatibilität hängt von Gerät und Firmware ab. <a href="https://github.com/unbox-digital-printing/vpn-indicator-for-tv/releases/tag/v0.4">Versionshinweise & Prüfsummen ↗</a></p></div>
+  </section>
+
+  <section id="installation" class="section install-section" aria-labelledby="install-title"><div class="wrap">
+    <div class="install-heading"><div><p class="eyebrow">VOM DOWNLOAD AUF DEN BILDSCHIRM.</p><h2 id="install-title">Drei Schritte.<br>Dann läuft’s.</h2></div><div class="install-tabs" role="tablist" aria-label="Installationsanleitung"><button id="tab-firetv" role="tab" aria-selected="true" aria-controls="install-firetv" tabindex="0">Fire TV</button><button id="tab-android" role="tab" aria-selected="false" aria-controls="install-android" tabindex="-1">Android / Google TV</button></div></div>
+    <div id="install-firetv" role="tabpanel" aria-labelledby="tab-firetv" class="steps"><article><span>01</span><h3>APK auf den Fire TV bringen.</h3><p>Öffne diese Website mit einer Download-App wie „Downloader“ auf deinem Fire TV. Wähle oben die Fire-TV-APK. Alternativ überträgst du die Datei vom Computer.</p></article><article><span>02</span><h3>Installation erlauben.</h3><p>Erlaube in den Fire-TV-Einstellungen der verwendeten Download- oder Datei-App die Installation unbekannter Apps. Öffne anschließend die heruntergeladene APK.</p></article><article><span>03</span><h3>Starten. Anpassen. Anschauen.</h3><p>Öffne VPN Indicator for TV und starte die Überwachung. Wähle deinen Look und teste einen VPN-Abbruch. Die Overlay-Freigabe wird geräteabhängig automatisch erteilt.</p></article></div>
+    <div id="install-android" role="tabpanel" aria-labelledby="tab-android" class="steps" hidden><article><span>01</span><h3>Die TV-Version herunterladen.</h3><p>Lade die Android-TV-APK herunter und übertrage sie auf deinen Android TV oder Google TV. Installiere sie mit der Download- oder Datei-App deines Geräts.</p></article><article><span>02</span><h3>Die Anzeige freigeben.</h3><p>Erlaube die APK-Installation für deine verwendete Datei-App. Öffne danach VPN Indicator for TV und gib über die Einrichtung „Über anderen Apps einblenden“ frei.</p></article><article><span>03</span><h3>Dein Zeichen setzen.</h3><p>Starte die Überwachung, wähle Symbol und Position und teste den Abbruchhinweis. Dein VPN-Client bleibt für die eigentliche Verbindung zuständig.</p></article></div>
+    <p class="install-note">Menünamen und verfügbare Freigaben unterscheiden sich je nach Gerät. Die Fire-TV-Version kann wegen ihrer Kompatibilitätsausrichtung einen Hinweis auf eine ältere Android-Zielversion anzeigen. Sicherheitswarnungen bitte prüfen; sie sind kein Sicherheitsnachweis.</p>
+  </div></section>
+
+  <section id="faq" class="section wrap faq-section" aria-labelledby="faq-title"><div><p class="eyebrow">GUT ZU WISSEN.</p><h2 id="faq-title">Kurz gefragt.<br>Klar beantwortet.</h2><p class="faq-intro">Noch etwas offen?<br><a class="text-link" href="mailto:unbox.digital.printing@gmail.com">Schreib uns <span>↗</span></a></p></div><div class="faq-list">
+    <details><summary>Ist die App selbst ein VPN?</summary><p>Nein. Du verwendest weiterhin deinen eigenen VPN-Anbieter. VPN Indicator for TV liest den vom Betriebssystem gemeldeten VPN-Status und zeigt ihn als Symbol über deinem Programm an.</p></details>
+    <details><summary>Was bedeutet ein aktiver Indikator genau?</summary><p>Das Betriebssystem meldet auf diesem Gerät ein aktives VPN-Netzwerk. Das ist kein Nachweis für eine funktionierende Internetverbindung, eine bestimmte öffentliche IP oder die Absicherung jeder einzelnen App. Die App prüft keine Datenlecks. VPNs im Router werden nicht erkannt; Split-Tunneling kann die Sichtbarkeit beeinflussen.</p></details>
+    <details><summary>Funktioniert die App auf jedem Smart TV?</summary><p>Sie ist für Android TV, Google TV und Android-basierte Fire-TV-Geräte ab API 23 gedacht. Samsung Tizen, LG webOS und Amazon Vega OS werden nicht unterstützt. Herstellerregeln für Overlays und Hintergrunddienste sowie einzelne Streaming-Apps können die Anzeige einschränken.</p></details>
+    <details><summary>Brauche ich auf dem Fire TV einen Computer oder ADB?</summary><p>Die separate Fire-TV-Version verwendet ein älteres Berechtigungsmodell, bei dem unterstützte Geräte die Overlay-Freigabe automatisch erteilen können. Das hat auf dem getesteten Fire TV funktioniert. Eine Garantie für jede Firmware gibt es nicht. Wenn dein Gerät die Anzeige blockiert und kein Freigabemenü anbietet, ist es für diesen einfachen Installationsweg nicht kompatibel.</p></details>
+    <details><summary>Kann ich den Namen meines VPN-Anbieters anzeigen?</summary><p>Ja. Du kannst einen Namen manuell eingeben, lokal speichern, später erneut auswählen und wieder löschen. Der Name ist eine eigene Beschriftung; der Anbieter wird nicht automatisch aus der aktiven Verbindung ermittelt.</p></details>
+    <details><summary>Welche Daten sammelt die App?</summary><p>Die App hat keine Internet-Berechtigung und enthält keine Werbe- oder Tracking-SDKs. Einstellungen und Anbieternamen bleiben lokal gespeichert. Einzelheiten zur App und dieser Website stehen in der <a href="privacy.html">Datenschutzerklärung</a>.</p></details>
+    <details><summary>Wie bekomme ich neue Versionen?</summary><p>Neue APKs findest du hier auf der Website. Installiere die passende Version über deine vorhandene Installation. Bei gleicher Signatur und Paketkennung bleiben Einstellungen normalerweise erhalten. Die App lädt selbst keine Updates herunter. Ein Wechsel zwischen der regulären und der Fire-TV-Version kann eine Neuinstallation erfordern.</p></details>
+  </div></section>
+
+  <section id="unterstuetzen" class="support-section"><div class="wrap support-inner"><div><p class="eyebrow">MIT LIEBE ENTWICKELT. FÜR DEINEN TV.</p><h2>Kleine App.<br>Große Unterstützung.</h2><p>Du magst das Projekt? Feedback und Weiterempfehlungen helfen schon jetzt. Freiwillige Unterstützung über PayPal und Buy Me a Coffee ist für später geplant.</p><a class="text-link" href="mailto:unbox.digital.printing@gmail.com?subject=Feedback%20zu%20VPN%20Indicator%20for%20TV">Feedback geben <span>↗</span></a></div><div class="support-options"><div class="coffee-mark"><svg><use href="#i-coffee"/></svg></div><div class="support-buttons"><button id="support-paypal" type="button" disabled>PayPal <span>Bald verfügbar</span></button><button id="support-coffee" type="button" disabled><svg class="icon"><use href="#i-coffee"/></svg> Buy Me a Coffee <span>Bald verfügbar</span></button></div><p>Noch keine Zahlungen möglich.</p></div></div></section>
+</main>
+<footer class="site-footer wrap"><div class="footer-top"><a class="brand" href="#"><img src="assets/app-logo.png" width="36" height="36" alt=""><span>VPN Indicator <span class="brand-light">for TV</span><small>Your VPN. In sight.</small></span></a><p>Entwickelt von <a href="https://unbox-digital-printing.github.io/apps/">Un!Box – Digital & Print ↗</a></p></div><div class="footer-bottom"><span>© 2026 Un!Box – Digital & Print</span><div><a href="privacy.html">Datenschutz</a><a href="impressum.html">Impressum</a><a href="https://github.com/unbox-digital-printing/vpn-indicator-for-tv">GitHub ↗</a><a href="mailto:unbox.digital.printing@gmail.com">Kontakt</a></div></div></footer>
+</body></html>
