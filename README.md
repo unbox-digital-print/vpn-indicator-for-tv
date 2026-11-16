@@ -17,4 +17,7 @@ Die Landingpage unterstützt Deutsch, Englisch, Französisch und Spanisch. Über
 
 Die signierten APKs werden als GitHub-Release veröffentlicht. Version, Dateigröße und Release-URLs in `index.html` gemeinsam aktualisieren. Das Release enthält jeweils die Android-TV-APK, die Fire-TV-Kompatibilitäts-APK und `SHA256SUMS.txt`. Private Signaturschlüssel gehören niemals in dieses Repository.
 
+## Spenden
+PayPal und Buy Me a Coffee sind in support.json konfiguriert. Die PayPal-Empfängeradresse ist unbox.digital.printing@gmail.com. Die offizielle Buy-Me-a-Coffee-Grafik liegt lokal in assets/. Ohne gültige Adresse bleiben die Buttons deaktiviert. Nur offizielle PayPal- und Buy-Me-a-Coffee-Domains werden akzeptiert. Keine eingebetteten Zahlungswidgets.
+
 Kontakt: unbox.digital.printing@gmail.com
