@@ -113,9 +113,14 @@ fetch('support.json', {cache: 'no-cache'})
       const button = document.getElementById(`support-${id}`);
       const link = document.createElement('a');
       link.id = button.id;
+      link.className = 'bmc-button';
       link.href = url.href;
       link.rel = 'noopener noreferrer'; link.target = '_blank';
-      link.innerHTML = id === 'paypal' ? 'Mit PayPal unterstützen <span>Freiwilliger Beitrag ↗</span>' : '<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="217" height="60">';
+      const img = document.createElement('img');
+      img.src = id === 'paypal' ? 'assets/paypal-donate.svg' : 'assets/buy-me-a-coffee.png';
+      img.width = 217; img.height = 60;
+      img.alt = id === 'paypal' ? 'Donate with PayPal' : 'Buy Me a Coffee';
+      link.append(img);
       button.replaceWith(link);
       enabled = true;
     });
