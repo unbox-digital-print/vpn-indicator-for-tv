@@ -114,8 +114,8 @@ fetch('support.json', {cache: 'no-cache'})
       const link = document.createElement('a');
       link.id = button.id;
       link.href = url.href;
-      link.rel = 'noopener noreferrer';
-      link.innerHTML = id === 'paypal' ? 'Mit PayPal unterstützen <span>Freiwilliger Beitrag ↗</span>' : '<svg class="icon"><use href="#i-coffee"/></svg> Buy Me a Coffee <span>Projekt unterstützen ↗</span>';
+      link.rel = 'noopener noreferrer'; link.target = '_blank';
+      link.innerHTML = id === 'paypal' ? 'Mit PayPal unterstützen <span>Freiwilliger Beitrag ↗</span>' : '<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="217" height="60">';
       button.replaceWith(link);
       enabled = true;
     });
