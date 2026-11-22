@@ -2,10 +2,10 @@
 
 Your VPN. In sight.
 
-- Website: https://unbox-digital-printing.github.io/vpn-indicator-for-tv/
-- Datenschutz: https://unbox-digital-printing.github.io/vpn-indicator-for-tv/privacy.html
-- App-Übersicht: https://unbox-digital-printing.github.io/apps/
-- Downloads: https://github.com/unbox-digital-printing/vpn-indicator-for-tv/releases
+- Website: https://unbox-digital-print.github.io/vpn-indicator-for-tv/
+- Datenschutz: https://unbox-digital-print.github.io/vpn-indicator-for-tv/privacy.html
+- App-Übersicht: https://unbox-digital-print.github.io/apps/
+- Downloads: https://github.com/unbox-digital-print/vpn-indicator-for-tv/releases
 
 Statische Website ohne Build-Schritt, externe Schriftarten, Analyse-Skripte oder Zahlungs-Widgets. `index.html`, `styles.css`, `app.js` und `assets/` bilden die Landingpage. Die TV-Vorschau ist eine Illustration und erkennt kein echtes VPN.
 
